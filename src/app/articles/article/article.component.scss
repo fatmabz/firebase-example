@@ -1,0 +1,23 @@
+:host {
+  margin: 2rem;
+}
+
+.article-content {
+  width:30rem;
+}
+
+.status {
+  float: right;
+  background-color: #b30059;
+  color: white;
+  border-radius: 50%;
+  padding:6px;
+}
+
+mat-card {
+  height:100%;
+}
+
+.no-public {
+  background-color: #008CBA !important;
+}

@@ -1,0 +1,23 @@
+.articles-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  flex: 0 0 auto;
+}
+
+.example-spacer{
+  flex: 1 1 auto;
+}
+
+.articles-container {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:2rem;
+}
+
+mat-icon{
+  cursor:pointer;
+}

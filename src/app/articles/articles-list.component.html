@@ -1,0 +1,12 @@
+<div class="articles-list-container">
+	<mat-toolbar class="toolbar" color="primary">
+		<h1>Mes Articles</h1>
+		<span class="example-spacer"></span>
+		<mat-icon *ngIf="!isLogin()" (click)="logout()">lock_outline</mat-icon>
+	</mat-toolbar>
+	<div class="articles-container" *ngIf="(articles$ | async); let articlesList; else loading">
+		<article *ngFor="let article of articlesList" [item]="article"></article>
+	</div>
+</div>
+
+<ng-template #loading>Loading Data...</ng-template>

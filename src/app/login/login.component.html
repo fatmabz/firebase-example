@@ -1,0 +1,13 @@
+<div class="submit-form">
+<form (ngSubmit)="login()">
+	<input matInput #pseudoText name="pseudoText" [(ngModel)]="pseudo" required placeholder="Pseudo" type="email">
+	<input matInput #passwordText name="passwordText" [(ngModel)]="password" required placeholder="Password" type="text">
+	<button mat-button class="submit-button" [disabled]="pseudoText.value.length === 0 || passwordText.value.length === 0" type="submit">
+    Log In
+  </button>
+</form>
+</div>
+
+<div class="login-content">
+
+</div>
